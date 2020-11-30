@@ -1,0 +1,5 @@
+docker inspect spawning-pool | jq '.[].Config.Env'
+
+OR
+
+docker inspect -f '{{.Config.Env}}' spawning-pool

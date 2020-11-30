@@ -1,0 +1,8 @@
+docker run -it debian /bin/bash
+apt update && apt upgrade -y
+apt install -y build-essential git
+
+OR
+If container alredy exist:
+
+docker exec -it debian apt update && apt upgrade -y && apt install -y build-essential git

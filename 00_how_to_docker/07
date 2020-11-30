@@ -1,0 +1,1 @@
+docker inspect overlord | jq '.[].NetworkSettings.IPAddress' OR docker inspect --format '{{ .NetworkSettings.IPAddress }}' overlord
